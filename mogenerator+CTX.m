@@ -66,7 +66,7 @@ static NSString *immutableEntityClassNameForManagedObjectClassName(NSString *man
 
 static NSString *mutableEntityClassNameForManagedObjectClassName(NSString *managedObjectClassName)
 {
-    return [NSString stringWithFormat:@"%@MutableEntity", normalizedManagedObjectClassName(managedObjectClassName)];
+    return [NSString stringWithFormat:@"%@Entity", normalizedManagedObjectClassName(managedObjectClassName)];
 }
 
 static NSString *syncableEntityTypeClassNameForManagedObjectClassName(NSString *managedObjectClassName)
